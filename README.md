@@ -12,3 +12,6 @@ A simple Laravel deployer for your projects.
 [![dependency status](https://deps.rs/repo/github/samirdjelal/laravel-deployer/status.svg)](https://deps.rs/repo/github/samirdjelal/laravel-deployer)
 
 
+```bash
+$ cargo run -- config.yml
+```
