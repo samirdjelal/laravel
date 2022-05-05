@@ -1,4 +1,4 @@
-use deployer::Deployer;
+use laravel::Deployer;
 
 fn main() {
 	let attr = std::env::args().skip(1).next();

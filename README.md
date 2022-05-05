@@ -1,7 +1,5 @@
 # Laravel-Deployer
 
-A simple Laravel deployer for your projects.
-
 [![laravel-deployer crate](https://img.shields.io/crates/v/laravel.svg)](https://crates.io/crates/laravel)
 [![test](https://github.com/samirdjelal/laravel-deployer/workflows/test/badge.svg)](https://github.com/samirdjelal/laravel-deployer/actions)
 [![build](https://github.com/samirdjelal/laravel-deployer/workflows/build/badge.svg)](https://github.com/samirdjelal/laravel-deployer/actions)
@@ -11,7 +9,52 @@ A simple Laravel deployer for your projects.
 [![laravel-deployer documentation](https://img.shields.io/docsrs/laravel)](https://docs.rs/laravel)
 [![dependency status](https://deps.rs/repo/github/samirdjelal/laravel-deployer/status.svg)](https://deps.rs/repo/github/samirdjelal/laravel-deployer)
 
+A simple Laravel deployer for your projects.
+
+## Example
+
+Add the following dependency to the Cargo.toml file:
+
+```toml
+[dependencies]
+laravel = "0.1.2"
+```
+
+And then get started in your `main.rs`:
+
+```rust
+use laravel::Deployer;
+
+fn main() {
+	
+	let config = "config.yml";
+	
+	let deployer = Deployer::new()
+		.configure(config)
+		.deploy();
+	
+}
+```
+
+### Run
 
 ```bash
-$ cargo run -- config.yml
+# Dev
+💲 cargo run -- config.yml
+
+# Build
+💲 cargo build
+💲 target/debug/deployer config.yml
+
+# Test
+💲 cargo test
 ```
+
+## License
+
+This project is licensed under the [MIT license](LICENSE).
+
+### Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in `laravel-deployer` by you, shall be licensed as MIT, without any additional terms or conditions.
+
