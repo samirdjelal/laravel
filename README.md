@@ -25,7 +25,7 @@ Add the following dependency to the Cargo.toml file:
 
 ```toml
 [dependencies]
-laravel = "0.1.2"
+laravel = "0.1.3"
 ```
 
 And then get started in your `main.rs`:
