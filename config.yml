@@ -1,2 +1,5 @@
 hostname: localhost
 port: 8080
+tasks:
+  - php artisan optimize
+  - php artisan migrate
