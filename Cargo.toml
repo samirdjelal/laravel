@@ -23,3 +23,4 @@ name = "deployer"
 path = "src/main.rs"
 
 [dependencies]
+yaml-rust = "0.4.5"
