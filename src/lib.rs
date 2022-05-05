@@ -21,8 +21,7 @@ impl Deployer {
 	}
 	pub fn deploy(&self) {
 		for doc in self.config.iter() {
-			let mut yaml = doc.clone();
-			
+			let yaml = doc.clone();
 			match yaml.as_hash() {
 				Some(hash) => {
 					for (key, value) in hash.iter() {
