@@ -13,6 +13,14 @@ A simple Laravel deployer for your projects.
 
 ## Example
 
+### Using the binary
+
+```bash
+💲 cargo install laravel
+💲 deployer config.yml
+```
+
+### Using the crate
 Add the following dependency to the Cargo.toml file:
 
 ```toml
@@ -29,9 +37,9 @@ fn main() {
 	
 	let config = "config.yml";
 	
-	let deployer = Deployer::new()
-		.configure(config)
-		.deploy();
+	let mut deployer = Deployer::new();
+	deployer.configure(config);
+	deployer.deploy();
 	
 }
 ```
@@ -49,6 +57,8 @@ fn main() {
 # Test
 💲 cargo test
 ```
+
+---
 
 ## License
 
