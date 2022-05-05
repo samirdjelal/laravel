@@ -1,0 +1,25 @@
+[package]
+name = "laravel"
+version = "0.1.0"
+edition = "2021"
+authors = ["Samir Djelal <ssdjelal@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/samirdjelal/laravel-deployer"
+license = "MIT"
+homepage = "https://github.com/samirdjelal/laravel-deployer"
+documentation = "https://docs.rs/laravel-deployer"
+keywords = ["laravel", "deployer", "deploy", "zero-downtime", "continuous-delivery"]
+description = "Laravel Zero Downtime"
+exclude = [
+	"screenshot/*",
+]
+
+[lib]
+name = "deployer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "deployer"
+path = "src/main.rs"
+
+[dependencies]
