@@ -12,6 +12,7 @@ keywords = ["laravel", "deployer", "deploy", "zero-downtime", "continuous-delive
 description = "Laravel Zero Downtime"
 exclude = [
 	"screenshot/*",
+	"examples/*",
 ]
 
 [lib]
