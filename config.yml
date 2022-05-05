@@ -1,5 +1,32 @@
+repository: git@github.com:samirdjelal/larancy.git
 hostname: localhost
-port: 8080
+remote_user: root
+deploy_path: /data/wwwroot/default
+keep_releases: 5
+http_user: daemon
+php_path: /usr/local/php/bin/php
+
+shared_files:
+  - .env
+
+shared_dirs:
+  - storage
+
+writable_use_sudo: false
+writable_recursive: true
+writable_chmod_mode: 0777
+writable_dirs:
+  - bootstrap/cache
+  - storage
+  - storage/app
+  - storage/app/public
+  - storage/framework
+  - storage/framework/cache
+  - storage/framework/sessions
+  - storage/framework/views
+  - storage/logs
+
 tasks:
   - php artisan optimize
   - php artisan migrate
+  - php artisan db:seed

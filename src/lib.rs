@@ -26,7 +26,7 @@ impl Deployer {
 			match yaml.as_hash() {
 				Some(hash) => {
 					for (key, value) in hash.iter() {
-						println!("{:?}: {:?}", key, value);
+						println!("{:?}: {:#?}", key, value);
 					}
 				}
 				None => {
