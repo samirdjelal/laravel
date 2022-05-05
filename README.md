@@ -44,8 +44,6 @@ fn main() {
 }
 ```
 
-### Run
-
 ```bash
 # Dev
 💲 cargo run -- config.yml
