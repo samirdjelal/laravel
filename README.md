@@ -26,7 +26,7 @@ A simple Laravel cli app.
 
 # Build
 💲 cargo build
-💲 target/debug/lara
+💲 target/debug/laravel-cli
 
 # Test
 💲 cargo test
