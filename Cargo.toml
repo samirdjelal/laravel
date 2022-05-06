@@ -1,14 +1,14 @@
 [package]
 name = "laravel"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 authors = ["Samir Djelal <ssdjelal@gmail.com>"]
 readme = "README.md"
-repository = "https://github.com/samirdjelal/laravel-deployer"
+repository = "https://github.com/samirdjelal/laravel"
 license = "MIT"
-homepage = "https://github.com/samirdjelal/laravel-deployer"
+homepage = "https://github.com/samirdjelal/laravel"
 documentation = "https://docs.rs/laravel"
-keywords = ["laravel", "deployer", "deploy", "zero-downtime", "continuous-delivery"]
+keywords = ["laravel", "laravel-cli", "automation", "laravel-helper", "hepler"]
 description = "Laravel Zero Downtime"
 exclude = [
 	"screenshot/*",
@@ -20,9 +20,7 @@ name = "laravel"
 path = "src/lib.rs"
 
 [[bin]]
-name = "deployer"
+name = "laravel-cli"
 path = "src/main.rs"
 
 [dependencies]
-yaml-rust = "0.4.5"
-ssh2 = "0.9"
