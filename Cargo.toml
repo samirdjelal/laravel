@@ -9,7 +9,7 @@ license = "MIT"
 homepage = "https://github.com/samirdjelal/laravel"
 documentation = "https://docs.rs/laravel"
 keywords = ["laravel", "laravel-cli", "automation", "laravel-helper", "hepler"]
-description = "Laravel Zero Downtime"
+description = "Laravel CLI Helper"
 exclude = [
 	"screenshot/*",
 	"examples/*",
